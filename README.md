@@ -1,2 +1,3 @@
 # seneca-plugin-archetype
-A kickoff archetype for seneca.js plugins
+A [kickoff](https://github.com/tombenke/kickoff) archetype for seneca.js plugins
+
