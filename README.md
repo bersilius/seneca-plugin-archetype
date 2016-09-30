@@ -1,6 +1,6 @@
-# {{application_name}}
+# {{plugin_name}}
 
-{{application_description}}
+{{plugin_description}}
 
 ## Installation
 
