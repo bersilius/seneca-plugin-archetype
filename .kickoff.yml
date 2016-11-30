@@ -57,3 +57,4 @@ converters:
         - lib/index.js
         - lib/index.spec.js
         - package.json
+        - README.md
