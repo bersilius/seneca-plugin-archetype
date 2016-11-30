@@ -1,18 +1,13 @@
 {
   "name": "{{plugin_name}}",
   "description": "{{plugin_description}}",
-  "version": "1.0.2",
+  "version": "1.0.0",
   "tags": [
     "seneca",
     "plugin",
     "micro-services"
   ],
   "main": "lib/index.js",
-  "scripts": {
-    "test": "cross-env NODE_ENV=test mocha --recursive 'lib/**/*.spec.js'",
-    "test:watch": "npm test -- --watch",
-    "coverage": "NODE_ENV=test istanbul cover _mocha -- recursive --compilers js:babel-register --timeout 15000 'lib/**/*.spec.js'"
-  },
   "author": {
     "name": "{{author_full_name}}",
     "email": "{{author_email}}"
@@ -25,6 +20,9 @@
   "repository": {
     "type": "git",
     "url": "http://github.com/{{author_github_account}}/{{plugin_name}}.git"
+  },
+  "engines": {
+    "node": "^4.0.0"
   },
   "dependencies": {
     "seneca": "^3.x.x"
@@ -40,7 +38,14 @@
     "mocha": "^2.x.x",
     "istanbul": "1.0.0-alpha.2"
   },
-  "engines": {
-    "node": "^4.0.0"
-  }
+  "scripts": {
+    "lint": "eslint lib/**",
+    "test": "cross-env NODE_ENV=test mocha --recursive 'lib/**/*.spec.js'",
+    "test:watch": "npm test -- --watch",
+    "coverage": "NODE_ENV=test istanbul cover _mocha -- recursive --compilers js:babel-register --timeout 15000 'lib/**/*.spec.js'"
+  },
+  "pre-push": [
+    "lint",
+    "test"
+  ]
 }
