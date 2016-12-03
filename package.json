@@ -32,13 +32,16 @@
     "chai": "^3.5.0",
     "cross-env": "^2.x.x",
     "mocha": "^2.x.x",
+    "coveralls": "^2.11.15",
+    "mocha-lcov-reporter": "^1.2.0",
     "istanbul": "1.0.0-alpha.2"
   },
   "scripts": {
     "lint": "eslint lib/**",
     "test": "cross-env NODE_ENV=test mocha --recursive 'lib/**/*.spec.js'",
     "test:watch": "npm test -- --watch",
-    "coverage": "NODE_ENV=test istanbul cover _mocha -- recursive --timeout 15000 'lib/**/*.spec.js'"
+    "coverage": "NODE_ENV=test istanbul cover _mocha -- recursive --timeout 15000 'lib/**/*.spec.js'",
+    "coveralls": "NODE_ENV=test istanbul cover _mocha --report lcovonly -- recursive --timeout 15000 'lib/**/*.spec.js' -R spec && cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js && rm -rf ./coverage"
   },
   "pre-push": [
     "lint",

@@ -4,6 +4,7 @@
 
 [![npm version][npm-badge]][npm-url]
 [![Build Status][travis-badge]][travis-url]
+[![Coveralls][BadgeCoveralls]][Coveralls]
 
 ## Installation
 
@@ -13,7 +14,7 @@ Run the install command:
 
 Run tests:
 
-    $ npm test
+    npm test
 
 ## References
 
@@ -27,5 +28,8 @@ by the [kickoff](https://github.com/tombenke/kickoff) utility.
 
 [npm-badge]: https://badge.fury.io/js/{{plugin_name}}.svg
 [npm-url]: https://badge.fury.io/js/{{plugin_name}}
-[travis-badge]: https://api.travis-ci.org/tombenke/{{plugin_name}}.svg
-[travis-url]: https://travis-ci.org/tombenke/{{plugin_name}}
+[travis-badge]: https://api.travis-ci.org/{{author_github_account}}/{{plugin_name}}.svg
+[travis-url]: https://travis-ci.org/{{author_github_account}}/{{plugin_name}}
+[Coveralls]: https://coveralls.io/github/{{author_github_account}}/{{plugin_name}}?branch=master
+[BadgeCoveralls]: https://coveralls.io/repos/github/{{author_github_account}}/{{plugin_name}}/badge.svg?branch=master
+

@@ -21,6 +21,15 @@ postscript: >
 
         npm test
 
+     - Create a GitHub repository and push the content of the project
+
+     - Activate the repository on travis-ci, to run automatic tests
+
+     - Activate the repository on coveralls.io, in order to get coverage value into the badge
+
+     - Change the account names in links to coveralls and travis at the bottom of the README.md file
+       in case they differ from the github account name of the author
+
 questions:
     - 
         type: input
