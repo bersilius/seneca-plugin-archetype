@@ -1,10 +1,17 @@
 # {{plugin_name}}
 
-{{plugin_description}}
-
 [![npm version][npm-badge]][npm-url]
 [![Build Status][travis-badge]][travis-url]
 [![Coveralls][BadgeCoveralls]][Coveralls]
+
+{{plugin_description}}
+
+## Prerequisites
+
+The plugin needs the following seneca plugins to be used:
+
+- [???](https://www.npmjs.com/package/seneca-???)
+
 
 ## Installation
 
@@ -15,6 +22,40 @@ Run the install command:
 Run tests:
 
     npm test
+
+To obtain coverage, run:
+
+    npm coverage
+
+## Usage
+
+To load the plugin:
+
+```JavaScript
+    seneca.use('{plugin_name}}', /* options... */ )
+```
+
+### Options
+
+There are no options for this plugin.
+
+
+### Actions
+
+All actions provide results via the standard callback format: `function(error,data){ ... }`.
+
+#### role: {{plugin_name}}, cmd: TBD
+
+TBD
+
+_Parameters:_
+
+- `payload`: ???
+
+_Response:_ 
+
+- None
+
 
 ## References
 
