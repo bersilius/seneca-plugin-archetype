@@ -32,7 +32,7 @@ To obtain coverage, run:
 To load the plugin:
 
 ```JavaScript
-    seneca.use('{plugin_name}}', /* options... */ )
+    seneca.use('{{plugin_name}}', /* options... */ )
 ```
 
 ### Options
