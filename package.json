@@ -2,7 +2,7 @@
   "name": "{{plugin_name}}",
   "description": "{{plugin_description}}",
   "version": "1.0.0",
-  "tags": [
+  "keywords": [
     "seneca",
     "plugin",
     "micro-services"
