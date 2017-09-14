@@ -33,13 +33,13 @@ postscript: >
 questions:
     - 
         type: input
-        name: plugin_name
+        name: package_name
         message: The name of the plugin
         default: seneca-plugin-x
 
     -
         type: input
-        name: plugin_description
+        name: package_description
         message: The short description of the plugin
         default: This is a seneca plugin
 
@@ -67,3 +67,4 @@ converters:
         - lib/index.spec.js
         - package.json
         - README.md
+        - LICENSE.md
