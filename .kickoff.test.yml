@@ -1,0 +1,7 @@
+# Configuration file to generate test-seneca-plugin-rest-impl seneca plugin via kickoff
+# kickoff -a test-seneca-plugin.yml -f ~/topics/seneca-plugin-archetype/ -d test-seneca-plugin
+package_name: test-seneca-plugin
+package_description: The implementation of the the test-seneca-plugin
+author_full_name: Test Author
+author_email: testauthor@gmail.com
+author_github_account: testauthor
